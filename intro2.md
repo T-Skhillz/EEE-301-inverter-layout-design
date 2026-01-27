@@ -1,4 +1,4 @@
-# EEE 354 Lab – Importance of Digital Building Blocks & IC Design Flow
+# EEE 301 Lab – Importance of Digital Building Blocks & IC Design Flow
 
 ## Objective
 This session explains the importance of basic digital circuits (such as CMOS inverters and multiplexers) in complex integrated systems and introduces the IC design flow in a more intentional and structured way.
