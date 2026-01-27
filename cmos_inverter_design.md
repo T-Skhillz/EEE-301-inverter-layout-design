@@ -1,4 +1,4 @@
-# EEE 301 Lab – CMOS Inverter Design and Simulation
+# EEE 354 Lab – CMOS Inverter Design and Simulation
 
 ## Objective
 Design and simulate a **CMOS inverter** using an open-source IC design tool.  
@@ -30,46 +30,63 @@ This session introduces:
 
 ---
 
-## Tools Needed
+## Tools and Dependencies
 
-1. **Xschem**
-   - Open-source schematic capture tool.  
-   - Handles schematic design and integrates with SPICE simulation.  
-   - Download: [https://xschem.sourceforge.io](https://xschem.sourceforge.io)
+To follow the lab on Windows, you need the following:
 
-2. **NGSPICE**
-   - SPICE-based circuit simulator used as the backend for simulations.  
-   - Download: [http://ngspice.sourceforge.net/download.html](http://ngspice.sourceforge.net/download.html)
+1. **ActiveTcl 8.6**
+   - Required for Xschem GUI.  
+   - Download: [ActiveTcl 8.6 Windows 64-bit](https://dl.activestate.com/camel-builds/ActiveTcl/MSWin32-x64/20250111T170338Z/ActiveTcl-8.6.14.0000-MSWin32-x64-89732998.exe)  
+   - Install it first. Verify with:
+     ```bash
+     tclsh
+     puts [info patchlevel]
+     ```
+     Output should show `8.6.xx`.
 
-3. **SkyWater 130nm PDK**
-   - Provides pre-defined devices: NMOS, PMOS, capacitors, resistors, and libraries.  
-   - Download/clone: [https://github.com/google/skywater-pdk](https://github.com/google/skywater-pdk)
+2. **Xschem**
+   - Schematic capture tool used in the course.  
+   - Download: [Xschem Official Page](https://xschem.sourceforge.io/stefan/index.html)  
+   - Install **after ActiveTcl**.
 
-> Note: For demonstration, the instructor uses **GlobalFoundries 180nm PDK**, but the workflow is the same.
+3. **NGSPICE**
+   - Circuit simulator backend for Xschem.  
+   - Download: [NGSPICE Official Page](http://ngspice.sourceforge.net/download.html)  
+   - Install and note the path to `ngspice.exe`.
+
+4. **SkyWater 130nm PDK**
+   - Provides NMOS, PMOS, capacitors, resistors, and libraries for IC design.  
+   - Clone/download from GitHub:  
+     ```
+     git clone https://github.com/google/skywater-pdk
+     ```
+   - Configure Xschem to load the PDK library (symbols, models, include files).
+
+> Optional: GlobalFoundries 180nm PDK can be used for demonstration, workflow is the same.
 
 ---
 
 ## Steps in Schematic Capture (Xschem)
 
 1. **Start Xschem**
-   - Load the PDK library (SkyWater or GF180)  
-   - Set up directories for symbols and components  
+   - Ensure ActiveTcl is installed.  
+   - Load PDK library (SkyWater or GF180).  
 
 2. **Create a new schematic**
-   - Click **Add → New Schematic**  
+   - Click **Add → New Schematic**.
 
 3. **Insert devices**
-   - Shortcut: `Shift + I` → Insert symbol  
+   - Shortcut: `Shift + I` → Insert symbol.  
    - Select devices from the PDK library:
      - NMOS transistor  
      - PMOS transistor  
 
-4. **Place devices on the schematic**
-   - Drop devices into the workspace  
-   - Rearrange for clarity: select device → press `M` to move  
+4. **Place devices**
+   - Drop devices into workspace.  
+   - Rearrange for clarity: select → press `M` to move.
 
 5. **Insert wiring**
-   - Shortcut: `W` → insert wire  
+   - Shortcut: `W` → wire.  
    - CMOS inverter connections:
      - Gates of NMOS and PMOS → input  
      - Drains of NMOS and PMOS → output  
@@ -77,9 +94,11 @@ This session introduces:
      - NMOS source → GND  
 
 6. **Arrange power supply and output**
-   - VDD at top  
-   - GND at bottom  
-   - Output node in the middle  
+   - VDD at top, GND at bottom, output in the middle.
+
+7. **Run simulation**
+   - Make sure Xschem points to NGSPICE (`Settings → Simulator`).  
+   - Run transient / DC / AC analysis to verify CMOS inverter behavior.
 
 ---
 
@@ -89,15 +108,15 @@ This session introduces:
   - `Shift + I` → Insert symbol  
   - `W` → Wire  
   - `M` → Move devices  
-- Always use **PDK devices**, not generic library devices  
-- Adjust workspace zoom for clarity and better placement  
+- Always use **PDK devices**, not generic symbols.  
+- Adjust workspace zoom for clarity.
 
 ---
 
 ## Next Step
 
-- Complete schematic capture for the CMOS inverter  
-- Run **transient simulation** in NGSPICE to verify functionality  
-- Proceed to layout or post-layout simulation as needed  
+- Complete schematic capture for the CMOS inverter.  
+- Run **transient simulation** in NGSPICE to verify functionality.  
+- Optionally proceed to layout/post-layout simulation using tools like **Magic** or **KLayout**.
 
 ---
