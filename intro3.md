@@ -1,4 +1,4 @@
-# EEE 354 Lab – IC Design Flow: Schematic and Layout
+# EEE 301 Lab – IC Design Flow: Schematic and Layout
 
 ## Objective
 This session explains the IC design workflow in detail, covering schematic capture, electrical simulation, layout, design rule checks, and post-layout verification.
