@@ -41,12 +41,13 @@ The `.tran` directive is used to run the transient simulation in Xschem/Ngspice:
 ![Transient Analysis Waveform](transient_analysis.png)
 *Figure: Input (Vin) and Output (Vout) waveforms showing inverter switching behavior*
 
-## Key Parameters Extracted
-- **tpHL**: High-to-low propagation delay
-- **tpLH**: Low-to-high propagation delay
-- **trise**: Output rise time (10% to 90%)
-- **tfall**: Output fall time (90% to 10%)
-- **tp**: Average propagation delay = (tpHL + tpLH) / 2
+## Waveform Observations
+
+* X-axis: time (ns) - time domain
+* Input Vin (blue): pulse waveform (0→1.8V→0V)
+* Output Vout (red): inverted response showing the switching behavior
+* Clear rise and fall transitions
+* Inverter operation verified: when Vin is high, Vout is low and vice versa
 
 ## Notes
 - Ensure proper timestep selection for accurate waveform capture
