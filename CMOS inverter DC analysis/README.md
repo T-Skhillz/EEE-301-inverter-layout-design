@@ -1,14 +1,10 @@
 # 🔌 CMOS Inverter DC Analysis (ngspice)
 
-![ngspice](https://img.shields.io/badge/Simulator-ngspice-blue)
-![PDK](https://img.shields.io/badge/PDK-Sky130-green)
-![Status](https://img.shields.io/badge/Status-Completed-success)
-
 This project demonstrates the DC sweep (Voltage Transfer Characteristic) analysis of a CMOS inverter using **ngspice** and Sky130 device models. It investigates the inverter switching threshold and the impact of transistor sizing on noise margin and performance.
 
 ---
 
-## 📌 Objectives
+## Objectives
 
 * Perform DC sweep analysis of a CMOS inverter
 * Plot the Voltage Transfer Characteristic (VTC)
@@ -18,7 +14,7 @@ This project demonstrates the DC sweep (Voltage Transfer Characteristic) analysi
 
 ---
 
-## 🛠 Tools & Technologies
+## Tools & Technologies
 
 * **ngspice**
 * **Sky130 PDK**
@@ -27,7 +23,7 @@ This project demonstrates the DC sweep (Voltage Transfer Characteristic) analysi
 
 ---
 
-## ⚙️ DC Sweep Syntax
+## DC Sweep Syntax
 
 The DC sweep command follows this syntax:
 
@@ -45,7 +41,7 @@ This sweeps the input voltage from 0V to 3.3V in 0.01V steps.
 
 ---
 
-## 🧪 Simulation Setup
+## Simulation Setup
 
 1. Comment out transient analysis:
 
@@ -65,7 +61,7 @@ This sweeps the input voltage from 0V to 3.3V in 0.01V steps.
 
 ---
 
-## 📊 Voltage Transfer Characteristic (VTC)
+## Voltage Transfer Characteristic (VTC)
 
 > ![alt text](image.png)
 
@@ -83,9 +79,11 @@ Vm ≈ 1.6 – 1.7 V (for VDD = 3.3 V)
 
 ---
 
-## 🔧 Effect of Transistor Sizing
+## Effect of Transistor Sizing
 
 ### Case 1: PMOS width smaller than NMOS (Wp < Wn)
+
+![alt text](VTC_case1.png)
 
 * Switching point shifts left
 * Reduced noise margin for logic '0'
@@ -126,7 +124,7 @@ This results in:
 
 ---
 
-## 📈 Engineering Significance
+## Engineering Significance
 
 The switching threshold voltage directly affects:
 * Noise margins
@@ -139,52 +137,16 @@ Proper transistor sizing is essential for functional silicon design.
 
 ---
 
-## 🚀 Design Flow Progress
+## Design Flow Progress
 
 Completed:
-* ✅ Schematic design
-* ✅ DC sweep analysis
+* Schematic design
+* DC sweep analysis
 
 Next steps:
-* 🔜 Physical layout (Magic / KLayout)
-* 🔜 DRC (Design Rule Check)
-* 🔜 LVS (Layout vs Schematic)
-* 🔜 Parasitic extraction
-* 🔜 Post-layout simulation
+* Physical layout (Magic / KLayout)
+* DRC (Design Rule Check)
+* LVS (Layout vs Schematic)
+* Parasitic extraction
+* Post-layout simulation
 
----
-
-## 📂 Project Structure
-
-```text
-.
-├── schematics/
-│   └── inverter.sch
-├── spice/
-│   └── inverter_dc.spice
-├── plots/
-│   └── vtc.png
-└── README.md
-```
-
----
-
-## 🧠 Key Takeaway
-
-A properly sized CMOS inverter produces a symmetric voltage transfer characteristic with a switching threshold near half the supply voltage. Deviations in transistor sizing shift the switching point and degrade noise margins.
-
-This project serves as the foundation for more complex CMOS digital circuit design and physical implementation.
-
----
-
-## 📜 License
-
-[Specify your license here, e.g., MIT, Apache 2.0, etc.]
-
-## 👤 Author
-
-[Your Name/GitHub Username]
-
----
-
-**⭐ If you found this project helpful, please consider giving it a star!**
