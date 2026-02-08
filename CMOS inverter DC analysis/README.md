@@ -108,16 +108,20 @@ Vm ≈ 1.6 – 1.7 V (for VDD = 3.3 V)
 
 ### ✅ Optimal Design (Balanced Inverter)
 
+![alt text](VTC_case3.png)
+
+#### Wp = 1.7u Wn = 1u
+
 To achieve a symmetric transfer curve:
 
 ```
-βₙ ≈ βₚ
+βn ≈ βp
 ```
 
 Since electron mobility is higher than hole mobility:
 
 ```
-Wₚ ≈ 2 × Wₙ
+Wp ≈ 2 × Wn
 ```
 
 This results in:
