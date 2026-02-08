@@ -39,7 +39,6 @@ The `.tran` directive is used to run the transient simulation in Xschem/Ngspice:
 ## Transient Response Waveform
 
 ![Transient Analysis Waveform](transient_analysis.png)
-![alt text](image.png)
 *Figure: Input (Vin) and Output (Vout) waveforms showing inverter switching behavior*
 
 ## Key Parameters Extracted
