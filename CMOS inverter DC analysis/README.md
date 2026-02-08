@@ -84,7 +84,9 @@ Vm ≈ 1.6 – 1.7 V (for VDD = 3.3 V)
 ### Case 1: PMOS width smaller than NMOS (Wp < Wn)
 
 ![alt text](VTC_case1.png)
-#### Wp = 0.2u Wn = 1u 
+
+#### Wp = 0.2u, Wn = 1u 
+
 * Switching point shifts left
 * Reduced noise margin for logic '0'
 * Skewed VTC curve
@@ -97,7 +99,7 @@ Vm ≈ 1.6 – 1.7 V (for VDD = 3.3 V)
 
 ![alt text](VTC_case2.png)
 
-#### Wp = 13u Wn = 1u
+#### Wp = 13u, Wn = 1u
 * Switching point shifts right
 * Reduced noise margin for logic '1'
 * Narrow valid high-input range
@@ -110,7 +112,7 @@ Vm ≈ 1.6 – 1.7 V (for VDD = 3.3 V)
 
 ![alt text](VTC_case3.png)
 
-#### Wp = 1.7u Wn = 1u
+#### Wp = 1.7u, Wn = 1u
 
 To achieve a symmetric transfer curve:
 
