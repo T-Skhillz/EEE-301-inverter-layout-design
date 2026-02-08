@@ -1,4 +1,4 @@
-# 🔌 CMOS Inverter DC Analysis (ngspice)
+# CMOS Inverter DC Analysis (ngspice)
 
 This project demonstrates the DC sweep (Voltage Transfer Characteristic) analysis of a CMOS inverter using **ngspice** and Sky130 device models. It investigates the inverter switching threshold and the impact of transistor sizing on noise margin and performance.
 
@@ -84,7 +84,7 @@ Vm ≈ 1.6 – 1.7 V (for VDD = 3.3 V)
 ### Case 1: PMOS width smaller than NMOS (Wp < Wn)
 
 ![alt text](VTC_case1.png)
-
+#### Wp = 0.2u Wn = 1u 
 * Switching point shifts left
 * Reduced noise margin for logic '0'
 * Skewed VTC curve
@@ -95,6 +95,9 @@ Vm ≈ 1.6 – 1.7 V (for VDD = 3.3 V)
 
 ### Case 2: PMOS width larger than NMOS (Wp >> Wn)
 
+![alt text](VTC_case2.png)
+
+#### Wp = 13u Wn = 1u
 * Switching point shifts right
 * Reduced noise margin for logic '1'
 * Narrow valid high-input range
