@@ -38,10 +38,10 @@ The DC sweep command follows this syntax:
 Example:
 
 ```spice
-.dc Vin 0 1.8 0.01
+.dc Vin 0 3.3 0.01
 ```
 
-This sweeps the input voltage from 0V to 1.8V in 0.01V steps.
+This sweeps the input voltage from 0V to 3.3V in 0.01V steps.
 
 ---
 
@@ -56,7 +56,7 @@ This sweeps the input voltage from 0V to 1.8V in 0.01V steps.
 2. Enable DC sweep:
 
 ```spice
-.dc Vin 0 1.8 0.01
+.dc Vin 0 3.3 0.01
 ```
 
 3. Run simulation and plot:
@@ -67,8 +67,7 @@ This sweeps the input voltage from 0V to 1.8V in 0.01V steps.
 
 ## 📊 Voltage Transfer Characteristic (VTC)
 
-> 📷 *Insert plot image here*
-> `plots/vtc.png`
+> ![alt text](image.png)
 
 The Voltage Transfer Characteristic (VTC) shows the relationship between the input and output voltages of the CMOS inverter.
 
