@@ -88,7 +88,7 @@ SPICE simulation commands are added using `code_shown.sym` in Xschem:
 
 ### Transient Analysis
 ```spice
-.tran 1n 100n
+.tran 1ns 100ns
 ```
 
 ---
