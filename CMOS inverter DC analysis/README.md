@@ -91,7 +91,7 @@ Vm ≈ 1.6 – 1.7 V (for VDD = 3.3 V)
 * Reduced noise margin for logic '0'
 * Skewed VTC curve
 
-❌ Not recommended
+**Not recommended**
 
 ---
 
@@ -100,15 +100,16 @@ Vm ≈ 1.6 – 1.7 V (for VDD = 3.3 V)
 ![alt text](VTC_case2.png)
 
 #### Wp = 13u, Wn = 1u
+
 * Switching point shifts right
 * Reduced noise margin for logic '1'
 * Narrow valid high-input range
 
-❌ Not recommended
+**Not recommended**
 
 ---
 
-### ✅ Optimal Design (Balanced Inverter)
+### Optimal Design (Balanced Inverter)
 
 ![alt text](VTC_case3.png)
 
