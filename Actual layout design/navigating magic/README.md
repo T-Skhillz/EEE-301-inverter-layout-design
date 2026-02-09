@@ -62,8 +62,3 @@ zoom 2              # Zoom in
 - **Poly over N-diffusion** = NMOS transistor
 - DRC validates design rules
 - Each layer has unique color
-
-## Resources
-
-- [Magic Documentation](http://opencircuitdesign.com/magic/)
-- [Skywater PDK](https://skywater-pdk.readthedocs.io/)
