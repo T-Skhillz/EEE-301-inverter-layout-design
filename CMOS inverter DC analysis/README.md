@@ -72,7 +72,7 @@ Key observations:
 
 For this design:
 ```
-Vm ≈ 1.6 – 1.7 V (for VDD = 1.8 V)
+Vm ≈ 0.9 V (for VDD = 1.8 V)
 ```
 
 ---
