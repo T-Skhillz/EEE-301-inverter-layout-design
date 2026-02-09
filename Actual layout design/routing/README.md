@@ -3,15 +3,22 @@
 ## Layout Diagram
 
 ![CMOS Inverter Layout](layout_diagram.png)
-*Figure: CMOS Inverter layout showing PMOS (top) and NMOS (bottom) with DRC=0*
+
+*Figure 1: CMOS Inverter layout showing PMOS (top) and NMOS (bottom) with DRC=0*
 
 ---
 
-![PMOS diagram](PMOS.png)
+![PMOS with VDD port diagram](PMOS_VDD_port.png)
+
+*Figure 2: CMOS Inverter Layout (Upper Half with VDD port)*
 
 ---
 
-![NMOS diagram](NMOS.png)
+![NMOS with VSS, Vin and Vout ports](NMOS_with_ports.png)
+
+*Figure 3: CMOS Inverter Layout (Lower Half with the Vin, Vout, and VSS ports)*
+
+---
 
 ## Layout Arrangement
 
