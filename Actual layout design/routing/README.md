@@ -3,7 +3,6 @@
 ## Layout Diagram
 
 ![CMOS Inverter Layout](layout_diagram.png)
-![CMOS Inverter Layout](layout_diagram.png)
 
 *Figure 1: CMOS Inverter layout showing PMOS (top) and NMOS (bottom) with DRC=0*
 
